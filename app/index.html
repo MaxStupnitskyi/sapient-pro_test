@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	//= snippets/head.html
+
+	<body>
+		//= snippets/header.html
+
+		<div class="container">
+			<div class="change-type">
+				<button class="change-type__tab active">
+					<img src="img/icons/cloud.svg" alt="cloud" /> Cloud
+				</button>
+				<button class="change-type__tab">
+					<img src="img/icons/dns.svg" alt="Self-managed" /> Self-managed
+				</button>
+			</div>
+		</div>
+
+		<div class="calculator__wrap" id="calculator">
+			<div class="calculator">
+				<div class="container">
+					<div class="calculation">
+						<div class="calculation__header">
+							<div class="calculation__buttons">
+								<button class="button secondary active">Monthly</button>
+								<button class="button secondary">Annual</button>
+							</div>
+							<div class="calculation__users">
+								<label class="calculation__label">No. of users:</label>
+								<input type="number" value="1" min="1" step="1" class="calculation__input" />
+							</div>
+						</div>
+						<div class="slider__wrap">
+							<div class="scale">
+								<div class="scale__item">1 user</div>
+								<div class="scale__item">150</div>
+								<div class="scale__item">600</div>
+								<div class="scale__item">1k</div>
+								<div class="scale__item">1.5k</div>
+								<div class="scale__item">2.5k</div>
+								<div class="scale__item">5k</div>
+								<div class="scale__item">10k</div>
+								<div class="scale__item">20k</div>
+							</div>
+							<div id="slider" class="slider"></div>
+						</div>
+						<p class="calculator__hint">Pricing starts at $7 per user for the first 100 users.</p>
+					</div>
+					<div class="summary">
+						<h3 class="summary__title">Monthly pricing summary:</h3>
+						<p class="summary__value">$13,400 <span class="summary__value_period">/ mo.</span></p>
+						<div class="summary__details">
+							<p class="summary__details__text">
+								Avg. <span class="summary__details__text_accent">$5.07 </span> / user / mo.
+							</p>
+							<p class="summary__details__text">For 5,000 users</p>
+						</div>
+						<button class="button summary__button">
+							<img src="img/icons/check-offers.svg" alt="arrow" />Check offers
+						</button>
+						<button class="expand-calc">
+							<img src="img/icons/angle-down.svg" alt="expand calc" />
+						</button>
+					</div>
+					<button class="expand-calc_mobile button">change setup</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="modules">
+				<div class="modules__selecting">
+					<h2 class="modules__title">Kameon Pro Modules, Member Self-Service & Mobile App:</h2>
+					<div class="modules__selecting__content">
+						<h3 class="modules__subtitle">Title</h3>
+						<!-- prettier-ignore -->
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+						//= snippets/module.html
+					</div>
+				</div>
+				<div class="modules__checkout">
+					<div class="modules__coupon">
+						<p class="modules__coupon__text">You have selected:</p>
+						//= snippets/coupon.html
+					</div>
+					//= snippets/cart.html
+					<div class="modules__checkout__footer">
+						<div class="modules__checkout__total">
+							<p class="modules__checkout__total__title">Total:</p>
+							<p class="modules__checkout__total__value">$5,315</p>
+						</div>
+						<div class="modules__checkout__payment">
+							<p class="modules__checkout__payment__left">
+								Pay on <span class="modules__checkout__payment__date">May 23, 2020</span>
+							</p>
+							<div class="modules__checkout__payment__discount">
+								<img src="img/icons/ticket-blue.svg" alt="" />10% discount included
+							</div>
+						</div>
+						<a href="#!" class="modules__checkout__button button">Checkout</a>
+						<div class="modules__checkout__login">
+							<a href="#!" class="login">Log in</a> to upgrade or add to your existing subscription.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		//= snippets/footer.html
+		<div id="sidebar-cart" class="sidebar-cart">
+			<button class="hide-sidebar-cart">
+				<img src="img/icons/close.svg" alt="" />
+			</button>
+			<div class="modules__checkout" id="sidebar-cart__content">
+				<div class="modules__coupon">
+					<p class="modules__coupon__text">You have selected:</p>
+				</div>
+				<div class="cart" id="sb-cart">
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">
+								Awareness Training - Unlimited (Requires an existing LMS)
+							</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modules__checkout__footer">
+					<div class="modules__checkout__total">
+						<p class="modules__checkout__total__title">Total:</p>
+						<p class="modules__checkout__total__value">$5,315</p>
+					</div>
+					<div class="modules__checkout__payment">
+						<p class="modules__checkout__payment__left">
+							Pay on <span class="modules__checkout__payment__date">May 23, 2020</span>
+						</p>
+						<div class="modules__checkout__payment__discount">
+							<img src="img/icons/ticket-blue.svg" alt="" />10% discount included
+						</div>
+					</div>
+					//= snippets/coupon.html
+					<a href="#!" class="modules__checkout__button button">Checkout</a>
+					<div class="modules__checkout__login">
+						<a href="#!" class="login">Log in</a> to upgrade or add to your existing subscription.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="change-setup">
+			<div class="change-setup__hide"></div>
+			<div class="calculator">
+				<div class="container">
+					<div class="calculation">
+						<div class="calculation__header">
+							<div class="calculation__buttons">
+								<button class="button secondary active">Monthly</button>
+								<button class="button secondary">Annual</button>
+							</div>
+							<div class="calculation__users">
+								<label class="calculation__label">No. of users:</label>
+								<input type="number" value="1" min="1" step="1" class="calculation__input" />
+							</div>
+						</div>
+
+						<p class="calculator__hint">Pricing starts at $7 per user for the first 100 users.</p>
+					</div>
+					<div class="summary">
+						<h3 class="summary__title">Monthly pricing summary:</h3>
+						<p class="summary__value">$13,400 <span class="summary__value_period">/ mo.</span></p>
+						<div class="summary__details">
+							<p class="summary__details__text">
+								Avg. <span class="summary__details__text_accent">$5.07 </span> / user / mo.
+							</p>
+							<p class="summary__details__text">For 5,000 users</p>
+						</div>
+						<button class="button summary__button">
+							<img src="img/icons/check-offers.svg" alt="arrow" />Check offers
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/scripts.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+.change-setup
+    position: fixed
+    bottom: -120vh
+    left: 0
+    width: 100%
+    background-color: #fff
+    z-index: 4
+    +ease
+
+    &::before
+        content: ''
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 100vw
+        height: 100vh
+        background-color: rgba($basic, 0.5)
+        z-index: 1
+
+    &__hide
+        content: ''
+        position: absolute
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        height: 5px
+        width: 60px
+        border-radius: 100px
+        background-color: $basic2
+        z-index: 2
+
+    &.visible
+        bottom: 0
+
+    .calculator
+        background-color: #fff
+        position: relative
+        z-index: 1
+        border-radius: 10px 10px 0 0
+        padding-top: 40px

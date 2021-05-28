@@ -1,0 +1,62 @@
+#slider
+    position: relative
+    z-index: 2
+
+.slider__wrap
+    margin: 0 14px
+
+.scale
+    position: relative
+    z-index: 2
+    height: 30px
+
+    &__item
+        position: absolute
+        transform: translateX(-50%)
+        color: $basic3
+
+@for $i from 0 through 9
+    .scale__item:nth-child(#{$i+1})
+        left: ($i * 12.5%)
+
+.noUi-handle
+    cursor: pointer
+
+.noUi-base
+    position: relative
+
+    &:after
+        pointer-events: none
+        content: ''
+        position: absolute
+        left: -1px
+        top: 0
+        width: 100%
+        height: 6px
+        clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%) // hide first scale line
+        background: repeating-linear-gradient(to right,#fff,#fff 2px,transparent 2px,transparent 12.5%)
+
+.noUi-target
+    background-color: $basic2
+    border: none
+    box-shadow: none
+    border-radius: 2px
+
+.noUi-horizontal
+    height: 6px
+
+    .noUi-handle
+        height: 20px
+        border-radius: 3px
+        box-shadow: 0px 1px 0px #106A96
+        width: 20px
+        border: none
+        right: -10px
+        top: -7px
+        background: url(../../img/icons/handler.svg) no-repeat center $primary
+
+        &::after, &::before
+            display: none
+
+.noUi-connect
+    background-color: $primary

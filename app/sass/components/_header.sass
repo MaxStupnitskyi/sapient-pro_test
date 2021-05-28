@@ -1,0 +1,187 @@
+.header
+	padding: 19px 0 21px
+	border-bottom: 1px solid $basic2
+	margin-bottom: 66px
+
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__right-block
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-right: 15px
+
+.logo
+	width: 152px
+	display: block
+	+contain
+
+	&__wrap
+		width: 200px
+
+	&_mobile
+		display: none
+
+.menu
+
+	&__link
+		text-transform: uppercase
+		font-size: 14px
+		margin: 0 32px
+		color: #000
+		+ease
+
+		&:hover
+			color: $primary
+
+.mobile-menu
+	display: none
+
+.cart-button
+	width: 24px
+	height: 24px
+	padding: 2px
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-left: 32px
+
+	&.full
+		position: relative
+
+		&::after
+			content: ''
+			position: absolute
+			right: -3px
+			top: -3px
+			background-color: $primary
+			border-radius: 50%
+			width: 6px
+			height: 6px
+
+.menu-button
+	cursor: pointer
+	transition: transform 400ms
+	user-select: none
+	width: 40px
+	height: 40px
+
+	.line
+		fill: none
+		transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
+		stroke: #000
+		stroke-width: 5.5
+		stroke-linecap: round
+
+	.top, .bottom
+		stroke-dasharray: 40 121
+
+	&.active
+		transform: rotate(45deg)
+
+		.top, .bottom
+			stroke-dashoffset: -68px
+
+	&__wrap
+		display: none
+		padding: 0
+
+@media screen and ( max-width: 1210px )
+
+	.header
+		padding: 14px 0 13px
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		background-color: #fff
+		z-index: 4
+		margin: 0
+
+		> .container
+			max-width: none
+			padding: 0 20px
+
+		&__right-block
+			padding-right: 0
+
+	.logo
+		width: 50px
+
+		&__wrap
+			width: 171px
+
+		&_mobile
+			display: block
+
+		&_desktop
+			display: none
+
+@media screen and ( max-width: 960px )
+
+	.menu
+
+		&__link
+			margin: 0
+
+			&:first-child
+				margin-right: 32px
+
+@media screen and ( max-width: 767px )
+
+	.header
+		padding: 0
+
+		> .container
+			padding: 0 0 0 10px
+			margin: 0
+
+		&__content
+			position: relative
+			z-index: 3
+			background-color: #fff
+
+	.menu-button
+
+		&__wrap
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: 10px
+
+	.menu
+		display: none
+
+	.header__button
+		display: none
+
+	.cart-button
+		margin: 0
+
+	.mobile-menu
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: absolute
+		top: -400px
+		left: 0
+		width: 100%
+		background-color: #fff
+		z-index: 2
+		transition: all 0.6s ease
+		padding-bottom: 10px
+		box-shadow: 0px -4px 60px rgba(0, 0, 0, 0.1)
+
+		&.active
+			top: 40px
+
+		.button
+			display: inline-block
+			margin-top: 10px
+
+		.menu__link
+			margin: 5px 0
+			padding: 4px 0

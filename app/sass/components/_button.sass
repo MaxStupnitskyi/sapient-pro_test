@@ -1,0 +1,21 @@
+.button
+    background-color: $primary
+    padding: 12px 24px
+    border-radius: 3px
+    font-size: 14px
+    font-weight: 500
+    color: #fff
+    +ease
+
+    &.secondary
+        background-color: transparent
+        color: $basic
+
+    &:hover
+        color: #fff
+        background-color: $primary-hover
+
+@media screen and ( max-width: 1210px )
+    .button
+        padding: 9px 23px
+        font-size: 12px

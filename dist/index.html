@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+		<link href="css/main.min.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	
+		<title>Sapient Pro Test</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container header__content">
+				<div class="logo__wrap">
+					<a href="#!" class="logo">
+						<img src="img/logo.svg" alt="logo" class="logo_desktop" />
+						<img src="img/logo-mobile.svg" alt="logo" class="logo_mobile" />
+					</a>
+				</div>
+				<nav class="menu">
+					<a href="#!" class="menu__link">For clubs/associations</a>
+					<a href="#!" class="menu__link">For companies</a>
+				</nav>
+				<div class="header__right-block">
+					<a href="#!" class="header__button button">Try it for free</a>
+					<button class="cart-button full">
+						<img src="img/icons/cart.svg" alt="cart" />
+					</button>
+					<button class="menu-button__wrap">
+						<svg class="menu-button" viewBox="0 0 100 100">
+							<path
+								class="line top"
+								d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+							/>
+							<path class="line middle" d="m 70,50 h -40" />
+							<path
+								class="line bottom"
+								d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<nav class="mobile-menu">
+				<a href="#!" class="menu__link">For clubs/associations</a>
+				<a href="#!" class="menu__link">For companies</a>
+				<a href="#!" class="button">Try it for free</a>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="change-type">
+				<button class="change-type__tab active">
+					<img src="img/icons/cloud.svg" alt="cloud" /> Cloud
+				</button>
+				<button class="change-type__tab">
+					<img src="img/icons/dns.svg" alt="Self-managed" /> Self-managed
+				</button>
+			</div>
+		</div>
+
+		<div class="calculator__wrap" id="calculator">
+			<div class="calculator">
+				<div class="container">
+					<div class="calculation">
+						<div class="calculation__header">
+							<div class="calculation__buttons">
+								<button class="button secondary active">Monthly</button>
+								<button class="button secondary">Annual</button>
+							</div>
+							<div class="calculation__users">
+								<label class="calculation__label">No. of users:</label>
+								<input type="number" value="1" min="1" step="1" class="calculation__input" />
+							</div>
+						</div>
+						<div class="slider__wrap">
+							<div class="scale">
+								<div class="scale__item">1 user</div>
+								<div class="scale__item">150</div>
+								<div class="scale__item">600</div>
+								<div class="scale__item">1k</div>
+								<div class="scale__item">1.5k</div>
+								<div class="scale__item">2.5k</div>
+								<div class="scale__item">5k</div>
+								<div class="scale__item">10k</div>
+								<div class="scale__item">20k</div>
+							</div>
+							<div id="slider" class="slider"></div>
+						</div>
+						<p class="calculator__hint">Pricing starts at $7 per user for the first 100 users.</p>
+					</div>
+					<div class="summary">
+						<h3 class="summary__title">Monthly pricing summary:</h3>
+						<p class="summary__value">$13,400 <span class="summary__value_period">/ mo.</span></p>
+						<div class="summary__details">
+							<p class="summary__details__text">
+								Avg. <span class="summary__details__text_accent">$5.07 </span> / user / mo.
+							</p>
+							<p class="summary__details__text">For 5,000 users</p>
+						</div>
+						<button class="button summary__button">
+							<img src="img/icons/check-offers.svg" alt="arrow" />Check offers
+						</button>
+						<button class="expand-calc">
+							<img src="img/icons/angle-down.svg" alt="expand calc" />
+						</button>
+					</div>
+					<button class="expand-calc_mobile button">change setup</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="modules">
+				<div class="modules__selecting">
+					<h2 class="modules__title">Kameon Pro Modules, Member Self-Service & Mobile App:</h2>
+					<div class="modules__selecting__content">
+						<h3 class="modules__subtitle">Title</h3>
+						<!-- prettier-ignore -->
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+						<div class="module">
+							<div class="module__icon">
+								<img src="img/icons/module.svg" alt="module" class="module__icon_unhover" />
+								<img src="img/icons/module-active.svg" alt="module" class="module__icon_hover" />
+							</div>
+							<div class="module__content">
+								<h4 class="module__title">Member Self-Service</h4>
+								<p class="module__text">
+									Aute enim officia exercitation fugiat ipsum Lorem aute proident proident do dolor occaecat.
+									Laboris qui reprehenderi
+								</p>
+							</div>
+							<div class="module__price">$135,315 <span class="module__price_period">/ mo.</span></div>
+							<button class="module__button">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="5" width="1" height="11" fill="#999999" />
+									<rect y="5" width="11" height="1" fill="#999999" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="modules__checkout">
+					<div class="modules__coupon">
+						<p class="modules__coupon__text">You have selected:</p>
+						<div class="coupon">
+							<div class="coupon__icon"><img src="img/icons/ticket.svg" alt="coupon" /></div>
+							<p class="coupon__text">YH#1KI</p>
+							<div class="coupon__applied"><img src="img/icons/check.svg" alt="check" /></div>
+						</div>
+					</div>
+					<div class="cart" id="cart">
+						<div class="cart__item">
+							<div class="cart__item__left">
+								<button class="cart__item__delete"><img src="img/icons/close.svg" alt="delete" /></button>
+								<h4 class="cart__item__title">Member Self-Service</h4>
+							</div>
+							<div class="cart__item__price">
+								$5,315
+								<div class="cart__item__price_period">/ mo.</div>
+							</div>
+						</div>
+					
+						<div class="cart__item">
+							<div class="cart__item__left">
+								<button class="cart__item__delete"><img src="img/icons/close.svg" alt="delete" /></button>
+								<h4 class="cart__item__title">Member Self-Service</h4>
+							</div>
+							<div class="cart__item__price">
+								$5,315
+								<div class="cart__item__price_period">/ mo.</div>
+							</div>
+						</div>
+						<div class="cart__item">
+							<div class="cart__item__left">
+								<button class="cart__item__delete"><img src="img/icons/close.svg" alt="delete" /></button>
+								<h4 class="cart__item__title">Awareness Training - Unlimited (Requires an existing LMS)</h4>
+							</div>
+							<div class="cart__item__price">
+								$5,315
+								<div class="cart__item__price_period">/ mo.</div>
+							</div>
+						</div>
+						<div class="cart__item">
+							<div class="cart__item__left">
+								<button class="cart__item__delete"><img src="img/icons/close.svg" alt="delete" /></button>
+								<h4 class="cart__item__title">Member Self-Service</h4>
+							</div>
+							<div class="cart__item__price">
+								$5,315
+								<div class="cart__item__price_period">/ mo.</div>
+							</div>
+						</div>
+						<div class="cart__item">
+							<div class="cart__item__left">
+								<button class="cart__item__delete"><img src="img/icons/close.svg" alt="delete" /></button>
+								<h4 class="cart__item__title">Member Self-Service</h4>
+							</div>
+							<div class="cart__item__price">
+								$5,315
+								<div class="cart__item__price_period">/ mo.</div>
+							</div>
+						</div>
+					</div>
+					<div class="modules__checkout__footer">
+						<div class="modules__checkout__total">
+							<p class="modules__checkout__total__title">Total:</p>
+							<p class="modules__checkout__total__value">$5,315</p>
+						</div>
+						<div class="modules__checkout__payment">
+							<p class="modules__checkout__payment__left">
+								Pay on <span class="modules__checkout__payment__date">May 23, 2020</span>
+							</p>
+							<div class="modules__checkout__payment__discount">
+								<img src="img/icons/ticket-blue.svg" alt="" />10% discount included
+							</div>
+						</div>
+						<a href="#!" class="modules__checkout__button button">Checkout</a>
+						<div class="modules__checkout__login">
+							<a href="#!" class="login">Log in</a> to upgrade or add to your existing subscription.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			
+		</footer>
+		<div id="sidebar-cart" class="sidebar-cart">
+			<button class="hide-sidebar-cart">
+				<img src="img/icons/close.svg" alt="" />
+			</button>
+			<div class="modules__checkout" id="sidebar-cart__content">
+				<div class="modules__coupon">
+					<p class="modules__coupon__text">You have selected:</p>
+				</div>
+				<div class="cart" id="sb-cart">
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">
+								Awareness Training - Unlimited (Requires an existing LMS)
+							</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__item__left">
+							<button class="cart__item__delete">
+								<img src="img/icons/close.svg" alt="delete" />
+							</button>
+							<h4 class="cart__item__title">Member Self-Service</h4>
+						</div>
+						<div class="cart__item__price">
+							$5,315
+							<div class="cart__item__price_period">/ mo.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modules__checkout__footer">
+					<div class="modules__checkout__total">
+						<p class="modules__checkout__total__title">Total:</p>
+						<p class="modules__checkout__total__value">$5,315</p>
+					</div>
+					<div class="modules__checkout__payment">
+						<p class="modules__checkout__payment__left">
+							Pay on <span class="modules__checkout__payment__date">May 23, 2020</span>
+						</p>
+						<div class="modules__checkout__payment__discount">
+							<img src="img/icons/ticket-blue.svg" alt="" />10% discount included
+						</div>
+					</div>
+					<div class="coupon">
+						<div class="coupon__icon"><img src="img/icons/ticket.svg" alt="coupon" /></div>
+						<p class="coupon__text">YH#1KI</p>
+						<div class="coupon__applied"><img src="img/icons/check.svg" alt="check" /></div>
+					</div>
+					<a href="#!" class="modules__checkout__button button">Checkout</a>
+					<div class="modules__checkout__login">
+						<a href="#!" class="login">Log in</a> to upgrade or add to your existing subscription.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="change-setup">
+			<div class="change-setup__hide"></div>
+			<div class="calculator">
+				<div class="container">
+					<div class="calculation">
+						<div class="calculation__header">
+							<div class="calculation__buttons">
+								<button class="button secondary active">Monthly</button>
+								<button class="button secondary">Annual</button>
+							</div>
+							<div class="calculation__users">
+								<label class="calculation__label">No. of users:</label>
+								<input type="number" value="1" min="1" step="1" class="calculation__input" />
+							</div>
+						</div>
+
+						<p class="calculator__hint">Pricing starts at $7 per user for the first 100 users.</p>
+					</div>
+					<div class="summary">
+						<h3 class="summary__title">Monthly pricing summary:</h3>
+						<p class="summary__value">$13,400 <span class="summary__value_period">/ mo.</span></p>
+						<div class="summary__details">
+							<p class="summary__details__text">
+								Avg. <span class="summary__details__text_accent">$5.07 </span> / user / mo.
+							</p>
+							<p class="summary__details__text">For 5,000 users</p>
+						</div>
+						<button class="button summary__button">
+							<img src="img/icons/check-offers.svg" alt="arrow" />Check offers
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/scripts.min.js"></script>
+	</body>
+</html>

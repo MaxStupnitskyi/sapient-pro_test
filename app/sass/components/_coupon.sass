@@ -1,0 +1,42 @@
+.coupon
+    border-radius: 3px
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+
+    &__icon
+        background-color: $primary
+        padding: 11px 10px
+        border-radius: 3px 0 0 3px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &::after
+            content: ''
+            position: absolute
+            border-right: 3px dashed $primary
+            right: -1px
+            top: 0
+            width: 2px
+            height: 100%
+
+    &__text
+        border-top: 1px solid $basic2
+        border-bottom: 1px solid $basic2
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding: 10px 14px
+        color: #959595
+
+    &__applied
+        border: 1px solid $basic2
+        border-left: none
+        border-radius: 0 3px 3px 0
+        padding: 13px 12px
+        display: flex
+        align-items: center
+        justify-content: center

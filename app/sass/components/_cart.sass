@@ -1,0 +1,55 @@
+.cart
+    background-color: $bg_fields
+    border: 1px solid $basic2
+    border-radius: 9px
+    padding: 36px 23px 14px
+    overflow: hidden
+    height: 360px
+
+    &__item
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        font-size: 16px
+        color: #949494
+        +ease
+        margin-bottom: 27px
+
+        &:hover
+            color: $basic
+
+            .cart
+
+                &__item
+
+                    &__delete
+                        opacity: 1
+
+        &__left
+            display: flex
+            width: 70%
+            padding-right: 15px
+
+        &__delete
+            align-self: flex-start
+            opacity: 0.8
+
+        &__title
+            padding-top: 18px
+
+        &__price
+            padding-top: 18px
+            width: 30%
+            text-align: right
+            font-weight: 500
+
+            &_period
+                font-size: 14px
+                font-weight: normal
+                color: $basic3
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle
+    background: $primary !important
+
+.os-theme-dark>.os-scrollbar-vertical, .os-theme-light>.os-scrollbar-vertical
+    width: 8px
