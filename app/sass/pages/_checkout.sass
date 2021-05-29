@@ -1,0 +1,358 @@
+.checkout
+
+    &__header
+        border-bottom: 1px solid $basic3
+        padding-bottom: 17px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 42px
+
+    > .container
+        display: flex
+        align-items: start
+
+    &__title
+        font-size: 16px
+        margin-bottom: 22px
+        color: $basic
+
+    &__left
+        width: 65.25%
+        padding: 0 65px 0 40px
+    
+    &__right
+        width: 34.75%
+        position: sticky
+        top: 30px
+        margin-bottom: 20px
+
+    .module
+        margin-bottom: 36px
+        border: none
+        padding: 0 32px
+
+        &:hover
+            
+            .module
+
+                &__price
+                    color: $basic3
+
+    &__step
+        background-color: $bg_fields
+        border: 1px solid $basic2
+        border-radius: 9px
+
+        &__title
+            font-size: 12px
+            text-align: center
+            color: $basic3
+            margin: 34px 32px 0
+
+        &__wrap
+
+            .modules__checkout__login
+                margin-top: 40px
+                font-weight: 400
+
+                .login
+                    font-weight: 500
+                    text-decoration: underline
+
+                    &:hover
+                        text-decoration: none
+
+        .double
+            display: flex
+            justify-content: space-between
+            align-items: center
+            gap: 24px
+            
+            .input__wrap
+                width: 50%
+
+        .input__wrap
+            margin-bottom: 28px
+
+        &__form
+            padding: 30px 32px 0
+
+            &.scrolled
+                height: 400px
+
+            .tab__section
+                padding-bottom: 31px
+
+        &__proceed
+            padding: 0 32px 30px
+
+            .button
+                width: 100%
+                display: block
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 16px
+                padding: 18.5px 23px
+                border-radius: 6px
+
+        &__footer
+            display: flex
+            justify-content: space-between
+            gap: 24px
+            border-top: 1px solid $basic2
+            padding: 25px 24px 22px
+
+            .button
+                width: 50%
+
+        .button
+            text-transform: uppercase
+            font-weight: bold
+
+            &.back-btn
+                background-color: $basic2
+                color: $basic3
+
+                &:hover
+                    background-color: #d7dddf
+
+    &__proceedings
+
+    &__payment-btns
+        display: flex
+        justify-content: space-between
+        margin-bottom: 40px
+
+    &__payment-btn
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        width: 30%
+        border: 1px solid $basic2
+        border-radius: 6px
+        padding: 11px
+        +ease
+        opacity: 0.6
+
+        &.active
+            border-color: $primary
+            opacity: 1
+            background-color: #fff
+
+        > *
+            pointer-events: none
+
+        &__icon
+            height: 20px
+            margin-bottom: 7px
+
+            img
+                vertical-align: middle
+                max-width: 100%
+
+        &__text
+            font-weight: 500
+            font-size: 10px
+            color: $secondary
+
+    &__total
+        padding: 28px 32px
+        border-top: 1px solid $basic2
+        background-color: #fff
+        z-index: 2
+
+        &__wrap
+            position: sticky
+            bottom: 0
+            left: 0
+
+@media screen and ( max-width: 1210px )
+
+    .checkout
+        padding-top: 110px
+
+        &__left
+            width: 55.7%
+            padding-left: 0
+
+        &__right
+            width: 44.3%
+
+        &__total
+            padding-left: 0
+            padding-right: 0
+
+        .module
+            padding: 0
+
+@media screen and ( max-width: 960px )
+
+    .checkout
+        padding-bottom: 130px
+
+        > .container
+            flex-direction: column
+
+        &__left
+            order: 2
+            width: 100%
+            padding-right: 0
+
+        &__right
+            order: 1
+            width: 100%
+            position: static
+            margin-bottom: 49px
+
+        &__step
+
+            &__footer
+                justify-content: center
+                
+                .button
+                    width: 164px
+
+            &__form
+                display: flex
+                flex-wrap: wrap
+                gap: 24px
+
+                &.scrolled
+                    height: auto
+
+                .double
+                    width: 100%
+
+                > .input__wrap
+                    width: calc(50% - 12px)
+
+            .tab__section.active
+                display: flex
+                flex-wrap: wrap
+                gap: 24px
+
+                .double_cvv
+                    width: calc(50% - 12px)
+                
+                > .input__wrap
+                    width: calc(50% - 12px)
+
+            &_first
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 27px
+                padding: 28px 40px 51px
+                flex-wrap: wrap
+
+                .checkout__step
+
+                    &__title
+                        width: 100%
+                        margin-top: 0
+
+                    &__form, &__proceed
+                        padding: 0
+                        width: calc(50% - 13.5px)
+
+                    &__form
+
+                        .input__wrap
+                            margin: 0
+
+        &__total
+            max-width: 688px
+            margin: 0 auto
+            border: none
+            
+            &__wrap
+                background-color: #fff
+                position: fixed
+                z-index: 4
+                left: 0
+                bottom: 0
+                width: 100%
+                box-shadow: 0px -4px 60px rgba(0, 0, 0, 0.1)
+
+        &__modules
+            background-color: $bg_fields
+            border: 1px solid $basic2
+            padding: 40px 40px 0
+            border-radius: 9px
+
+@media screen and ( max-width: 767px )
+    
+    .checkout
+        padding-top: 70px
+        padding-bottom: 0
+
+        &__left
+            display: none
+
+        &__right
+            margin-bottom: 0
+
+        &__title
+            font-size: 14px
+            margin-bottom: 32px
+
+        &__step
+            border: none
+            padding: 0
+            background-color: transparent
+
+            &_first
+                display: block
+
+
+                .checkout__step
+
+                    &__title, &__form, &__proceed
+                        width: 100%
+
+                    &__title
+                        margin-left: 0
+                        margin-bottom: 12px
+                        text-align: left
+
+                    &__form
+
+                        .input__wrap
+                            margin-bottom: 32px
+
+            &__form
+                padding: 0
+                gap: 0
+
+                .input
+
+                    &__wrap
+                        width: 100%
+
+                .double:not(.double_cvv)
+                    display: block
+
+                    .input__wrap
+                        width: 100%
+
+            &__proceed
+
+                .button
+                    font-size: 12px
+                    padding: 11px 23px
+
+            &__wrap
+
+                .modules__checkout__login
+                    margin-top: 32px
+
+            &__footer
+                padding-left: 0
+                padding-right: 0
+                gap: 20px
+                border: none
+
+                .button
+                    padding: 11px 23px

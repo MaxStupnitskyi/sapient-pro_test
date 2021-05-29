@@ -36,9 +36,60 @@ input
 .hidden
 	display: none
 
+.back-link
+	position: relative
+	font-size: 16px
+	color: $basic
+	padding-left: 12px
+	+ease
+	opacity: 0.5
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%) rotate(90deg)
+		width: 7px
+		height: 10px
+		background: url(../img/icons/angle-down.svg) no-repeat center
+		background-size: contain
+
+	&:hover
+		opacity: 1
+
+/** Custom checkbox **/
+input[type="checkbox"]
+	opacity: 0
+	pointer-events: none
+	position: absolute
+
+.checkbox-label
+	position: relative
+	padding-left: 22px
+	cursor: pointer
+	display: block
+	color: $basic3
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 12px
+		height: 12px
+		border: 1px solid $primary
+		border-radius: 2px
+
+input[type="checkbox"]:checked + .checkbox-label
+
+	&::before
+		background: url(../img/icons/check-white.svg) no-repeat center $primary
+		background-size: 8px
+
 @media screen and ( max-width: 1210px )
 
-	body
+	.main
 		padding-bottom: 100px
 
 	.container
@@ -51,11 +102,13 @@ input
 
 @media screen and ( max-width: 767px )
 
-	body
+	.main
 		padding-bottom: 60px
 
 	.container
 		max-width: auto
 		margin: 0 20px
 
+@import "pages/checkout"
+@import "pages/thankyou"
 @import "components/components"

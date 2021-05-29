@@ -1,0 +1,60 @@
+.thankyou
+
+    > .container
+        height: calc(100vh - 81px - 122px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &__title
+        font-size: 48px
+        margin-bottom: 60px
+        font-weight: bold
+        text-align: center
+    
+    &__text
+        color: $basic3
+        text-align: center
+        width: 390px
+        margin: 0 auto 72px
+
+    &__button
+        display: flex
+        justify-content: center
+
+        .button
+            text-transform: uppercase
+            border-radius: 6px
+            font-size: 20px
+            font-weight: bold
+            width: 200px
+            padding-top: 16px
+            padding-bottom: 16px
+
+@media screen and ( max-width: 1210px )
+
+    .thankyou
+
+        > .container
+            padding-top: 60px
+            height: 100vh
+
+@media screen and ( max-width: 767px )
+
+    .thankyou
+
+        &__title
+            font-size: 20px
+            margin-bottom: 28px
+
+        &__text
+            font-size: 12px
+            margin-bottom: 43px
+            width: auto
+
+        &__button
+
+            .button
+                font-size: 12px
+                padding: 11px 23px

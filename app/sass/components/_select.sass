@@ -1,0 +1,58 @@
+.custom-select
+	position: relative
+	width: 100%
+	@extend .input
+	padding-left: 0
+	padding-right: 0
+	border: none
+
+	select
+		display: none
+
+	~ .label
+		color: $basic3 !important
+
+.select-selected
+	background-color: transparent
+	color: $basic
+	cursor: pointer
+	height: 100%
+	display: flex
+	align-items: center
+
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		right: 5px
+		width: 12px
+		height: 7px
+		background: url(../img/icons/angle-down.svg) no-repeat center
+		background-size: contain
+		+ease
+		opacity: 0.3
+
+	&.select-arrow-active
+		
+		&::after
+			transform: rotate(180deg)
+
+.select-items div
+	color: $basic
+	padding: 18px 16px
+	border-bottom: 2px solid $basic2
+	cursor: pointer
+
+.select-items 
+	position: absolute
+	background-color: $bg_fields
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 2
+
+.select-hide
+	display: none
+
+.select-items div:hover, .same-as-selected
+	background-color: $basic2
